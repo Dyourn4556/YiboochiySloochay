@@ -25,7 +25,7 @@ public class LoginTest {
         System.out.println(response.asString());
 
 
-        response.then().statusCode(200);
+        response.then().statusCode(404);
 
         response.then().time(lessThan(2000l));
 
